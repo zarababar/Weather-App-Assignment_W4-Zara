@@ -1,0 +1,69 @@
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.8); /* Slightly white background for contrast */
+    z-index: 999; /* Ensure the loader is above other content */
+  }
+  
+  .cloud-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cloud {
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .cloud:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .cloud:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .loading-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+  

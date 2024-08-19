@@ -1,0 +1,34 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Ensure the error message is above other content */
+  }
+  
+  .error-icon {
+    font-size: 4rem; /* Larger icon size */
+    color: #d9534f; /* Error color */
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    text-align: center;
+    color: #d9534f; /* Error color */
+  }
+  
+  .error-message h2 {
+    font-size: 1.5rem; /* Title font size */
+    margin-bottom: 10px;
+  }
+  
+  .error-message p {
+    font-size: 1rem; /* Message font size */
+    margin: 0;
+  }
+  

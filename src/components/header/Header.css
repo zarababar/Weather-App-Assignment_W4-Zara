@@ -1,0 +1,47 @@
+/* Header container */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #00aaff, #0044cc); /* Gradient background */
+  border-bottom: 2px solid #00aaff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+  position: relative; /* For positioning absolute children if needed */
+  color: #fff; /* Text color */
+}
+
+/* Logo styles */
+.header-logo {
+  width: 80px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adds space between the logo and the title */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.header-logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Title styles */
+.header-title {
+  font-size: 2rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle text shadow for better readability */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-logo {
+    width: 60px; /* Adjust logo size for smaller screens */
+    margin-bottom: 10px; /* Add space between logo and title on smaller screens */
+  }
+
+  .header-title {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}

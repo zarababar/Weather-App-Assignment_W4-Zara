@@ -1,0 +1,42 @@
+.unit-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px 0;
+  font-size: 16px;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.unit-selector label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.unit-selector input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .unit-selector {
+    flex-direction: row; /* Stack items vertically on smaller screens */
+    align-items: center;    /* Center items horizontally */
+  }
+
+  .unit-selector label {
+    margin-bottom: 10px; /* Add space between items when stacked */
+  }
+}
+
+@media (max-width: 480px) {
+  .unit-selector {
+    flex-direction: row;
+    font-size: 14px; /* Adjust font size for very small screens */
+    margin: 10px 0; /* Reduce margin on very small screens */
+  }
+
+  .unit-selector input[type="radio"] {
+    margin-right: 5px; /* Reduce margin on very small screens */
+  }
+}

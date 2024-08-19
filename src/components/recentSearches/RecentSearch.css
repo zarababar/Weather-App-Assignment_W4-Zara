@@ -1,0 +1,27 @@
+.recent-searches-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .recent-searches-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add space between the buttons */
+    flex-wrap: wrap; /* Ensure buttons wrap to the next line if there are too many */
+    margin-top: 10px;
+  }
+  
+  .recent-search-button {
+    background-color: #707273;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .recent-search-button:hover {
+    background-color: #007bff;
+  }
+  
