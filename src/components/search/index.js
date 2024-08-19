@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import './Search.css';
-const Search = ({ onSearch}) => {
+const Search = ({ onSearch }) => {
   const inputRef = useRef('');
 
   const handleSubmit = (e) => {
@@ -25,7 +25,7 @@ const Search = ({ onSearch}) => {
           Search
         </button>
       </form>
-      
+
     </div>
   );
 };

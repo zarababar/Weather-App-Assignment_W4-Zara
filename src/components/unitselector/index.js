@@ -1,7 +1,7 @@
 import React from 'react';
 import './UnitSelector.css'; // Import the CSS file for styling
 
-const UnitSelector = ({onUnitChange}) => {
+const UnitSelector = ({ onUnitChange }) => {
   return (
     <div className="unit-selector">
       <label>

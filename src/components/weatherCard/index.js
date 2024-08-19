@@ -19,7 +19,7 @@ const WeatherCard = ({ weatherData, tempData, unit }) => {
         {unit === 'metric' ? '°C' : unit === 'imperial' ? '°F' : 'K'}
       </p>
       <p>
-        <span className="icon">☁️</span> Weather: 
+        <span className="icon">☁️</span> Weather:
         {weather.map((condition, index) => (
           <span key={index}> {condition.description}</span>
         ))}
